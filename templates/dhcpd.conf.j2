@@ -18,11 +18,11 @@ max-lease-time 14400;
 {% if bootstrap is defined %}
         host {{ bootstrap.name | lower }} { hardware ethernet {{ bootstrap.macaddr }}; fixed-address {{ bootstrap.ipaddr }}; }
 {% endif %}
-{% for m in masters %}
+{% for m in masters if m.macaddr %}
         host {{ m.name | lower }} { hardware ethernet {{ m.macaddr }}; fixed-address {{ m.ipaddr }}; }
 {% endfor %}
 {% if workers is defined %}
-{% for w in workers %}
+{% for w in workers if w.macaddr %}
         host {{ w.name | lower }} { hardware ethernet {{ w.macaddr }}; fixed-address {{ w.ipaddr }}; }
 {% endfor %}
 {% endif %}
