@@ -574,6 +574,7 @@
       repo: https://github.com/ashcrow/filetranspiler
       version: "{{ filetranspiler_version | default('master') }}"
       dest: /usr/local/src/filetranspiler
+      force: yes
     when: install_filetranspiler
 
   - name: Building filetranspiler
