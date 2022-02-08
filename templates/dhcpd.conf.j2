@@ -26,7 +26,7 @@ max-lease-time 14400;
 {% endfor %}
 {% endif %}
 {% if other is defined %}
-{% for o in other %}
+{% for o in other if o.macaddr %}
         host {{ o.name }} { hardware ethernet {{ o.macaddr }}; fixed-address {{ o.ipaddr }}; }
 {% endfor %}
 {% endif %}
