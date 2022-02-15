@@ -27,6 +27,15 @@ $TTL 1W
 {% endfor %}
 {% endif %}
 ;
+; create reverse lookup for zones
+{% if zones is defined %}
+{% for h in zones %}
+{% for n in h['hosts'] %}
+{{ n.ipaddr.split('.')[3] }}	IN	PTR	{{ n.name }}.{{ h.values() | first }}.{{ dns.domain }}.
+{% endfor %}
+{% endfor %}
+{% endif %}
+;
 {% if other is defined %}
 {% for o in other %}
 {{ o.ipaddr.split('.')[3] }}	IN	PTR	{{ o.name }}.{{ dns.clusterid }}.{{ dns.domain }}.

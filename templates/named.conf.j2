@@ -66,6 +66,16 @@ zone "{{ helper.ipaddr.split('.')[2] }}.{{ helper.ipaddr.split('.')[1] }}.{{ hel
 	type	master;
 	file	"reverse.db";
 };
+
+{% if zones is defined %}
+{% for z in zones %}
+zone "{{ z.cluster }}.{{ dns.domain }}" IN {
+        type    master;
+        file    "{{ z.cluster }}.zonefile.db";
+};
+
+{% endfor %}
+{% endif %}
 ########################################################
 
 include "/etc/named.rfc1912.zones";
