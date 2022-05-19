@@ -8,6 +8,8 @@ $TTL 1W
 	IN	NS	ns1.{{ item.cluster }}.{{ item.domain }}.
 ;
 ; syntax is "last octet" and the host must have fqdn with trailing dot
+ns1     IN      A       {{ item.nameserver }}
+smtp    IN      A       {{ item.nameserver }}
 ;
 {% for h in item.hosts %}
 {{ h.name | lower }}		IN	A	{{ h.ipaddr }}
