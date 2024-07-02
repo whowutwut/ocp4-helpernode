@@ -3,6 +3,7 @@ disk: sda
 helper:
   name: "c83f2u02"
   ipaddr: "10.28.20.41"
+  networkifacename: "ens4f0"
 dns:
   domain: "pok.stglabs.ibm.com"
   clusterid: "ocp4-c83f2"
