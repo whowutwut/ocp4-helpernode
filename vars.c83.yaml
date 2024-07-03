@@ -13,9 +13,9 @@ dhcp:
   router: "10.28.20.41"
   bcast: "10.28.23.255"
   netmask: "255.255.252.0" # /22 netmask
-  poolstart: "172.30.28.10"
-  poolend: "172.30.28.20"
-  ipid: "172.30.28.0"
+  poolstart: "10.28.20.200"
+  poolend: "10.28.20.201"
+  ipid: "10.28.20.0"
   netmaskid: "255.255.255.0"
 bootstrap:
   name: "bootstrap"
@@ -42,7 +42,10 @@ workers:
     ipaddr: "10.28.20.69"
     macaddr: "e4:3d:1a:fc:ce:48"
 
-
+pxe:
+  generate_default: true
+uefi: true
+install_filetranspiler: true
 force_ocp_download: True
 
 ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-rootfs.x86_64.img"
