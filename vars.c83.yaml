@@ -48,8 +48,16 @@ workers:
 install_filetranspiler: true
 force_ocp_download: True
 
-ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-rootfs.x86_64.img"
-ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-initramfs.x86_64.img"
-ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-kernel-x86_64"
-ocp_client: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.16.2/openshift-client-linux-4.16.2.tar.gz"
-ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.16.2/openshift-install-linux-4.16.2.tar.gz"
+# 4.15
+ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.0/rhcos-4.15.0-x86_64-live-rootfs.x86_64.img"
+ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.0/rhcos-4.15.0-x86_64-live-initramfs.x86_64.img"
+ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.0/rhcos-4.15.0-x86_64-live-kernel-x86_64"
+ocp_client: "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.15.0/openshift-client-linux-4.15.0.tar.gz"
+ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.15.0/openshift-install-linux-4.15.0.tar.gz"
+
+# # 4.16
+# ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-rootfs.x86_64.img"
+# ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-initramfs.x86_64.img"
+# ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-kernel-x86_64"
+# ocp_client: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.16.2/openshift-client-linux-4.16.2.tar.gz"
+# ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.16.2/openshift-install-linux-4.16.2.tar.gz"
