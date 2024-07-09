@@ -42,9 +42,9 @@ workers:
     ipaddr: "10.28.20.69"
     macaddr: "e4:3d:1a:fc:ce:48"
 
-pxe:
-  generate_default: true
-uefi: true
+# pxe:
+#   generate_default: true
+# uefi: true
 install_filetranspiler: true
 force_ocp_download: True
 
