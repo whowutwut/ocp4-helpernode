@@ -48,15 +48,15 @@ workers:
 install_filetranspiler: true
 force_ocp_download: true
 
-# 4.14
-ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.14/4.14.15/rhcos-4.14.15-x86_64-live-rootfs.x86_64.img"
-ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.14/4.14.15/rhcos-4.14.15-x86_64-live-initramfs.x86_64.img"
-ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.14/4.14.15/rhcos-4.14.15-x86_64-live-kernel-x86_64"
-ocp_client: "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.14.15/openshift-client-linux-4.14.15.tar.gz"
-ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.14.15/openshift-install-linux-4.14.15.tar.gz"
+# # 4.14
+# ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.14/4.14.15/rhcos-4.14.15-x86_64-live-rootfs.x86_64.img"
+# ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.14/4.14.15/rhcos-4.14.15-x86_64-live-initramfs.x86_64.img"
+# ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.14/4.14.15/rhcos-4.14.15-x86_64-live-kernel-x86_64"
+# ocp_client: "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.14.15/openshift-client-linux-4.14.15.tar.gz"
+# ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/4.14.15/openshift-install-linux-4.14.15.tar.gz"
 
 
-# # 4.15
+# # 4.15 (Install c83 in 2024)
 # ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.0/rhcos-4.15.0-x86_64-live-rootfs.x86_64.img"
 # ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.0/rhcos-4.15.0-x86_64-live-initramfs.x86_64.img"
 # ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.0/rhcos-4.15.0-x86_64-live-kernel-x86_64"
@@ -69,3 +69,21 @@ ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp
 # ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.16/4.16.0/rhcos-4.16.0-x86_64-live-kernel-x86_64"
 # ocp_client: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.16.2/openshift-client-linux-4.16.2.tar.gz"
 # ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.16.2/openshift-install-linux-4.16.2.tar.gz"
+
+# Get the files from here:
+# https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/
+# https://mirror.openshift.com/pub/openshift-v4/clients/ocp/
+
+# 4.17 (updated 6/30/2025)
+ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.17/4.17.17/rhcos-4.17.17-x86_64-live-rootfs.x86_64.img"
+ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.17/4.17.17/rhcos-live-initramfs.x86_64.img"
+ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.17/4.17.17/rhcos-live-kernel-x86_64"
+ocp_client: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.17.17/openshift-client-linux-4.17.17.tar.gz"
+ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.17.17/openshift-install-linux-4.17.17.tar.gz"
+
+# 4.18 (updated 6/30/2025)
+# ocp_bios: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.18/4.18.1/rhcos-4.18.1-x86_64-live-rootfs.x86_64.img"
+# ocp_initramfs: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.18/4.18.1/rhcos-live-initramfs.x86_64.img"
+# ocp_install_kernel: "https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.18/4.18.1/rhcos-live-kernel-x86_64"
+# ocp_client: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.18.10/openshift-client-linux-4.18.10.tar.gz"
+# ocp_installer: "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.18.10/openshift-install-linux-4.18.10.tar.gz"
